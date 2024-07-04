@@ -20,8 +20,8 @@
     - name: build docker image using the Dockerfile
       command: docker build -t elekrady/comingsoon-page .
       
-     - name: Install Docker SDK for Python
-       pip:
+    - name: Install Docker SDK for Python
+      pip:
         name: docker
         state: present
         
