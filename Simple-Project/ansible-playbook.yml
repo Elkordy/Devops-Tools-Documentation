@@ -12,15 +12,15 @@
       ignore_errors: yes
 
     - name: remove comingsoon-image
-      command: docker rmi triple3a/comingsoon-page
+      command: docker rmi elekrady/comingsoon-page
       ignore_errors: yes
 
     - name: build docker image using the Dockerfile
-      command: docker build -t triple3a/comingsoon-page .
+      command: docker build -t elekrady/comingsoon-page .
 
     - name: Push Image to dockerhub
       docker_image:
-        name: triple3a/comingsoon-page
+        name: elekrady/comingsoon-page
         push: yes
      # ignore_errors: yes
 
